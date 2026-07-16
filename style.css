@@ -231,6 +231,10 @@ nav a::after {
     box-shadow: 0 15px 35px rgba(0, 191, 255, .25);
 }
 
+.card:hover i {
+    transform: rotate(8deg) scale(1.15);
+}
+
 .card h3 {
     margin-bottom: 15px;
 }
@@ -243,6 +247,7 @@ nav a::after {
     font-size: 55px;
     color: var(--cor-primaria);
     margin-bottom: 20px;
+    transition: all .3s ease;
 }
 
 /* ========================================
@@ -269,29 +274,43 @@ nav a::after {
     gap: 30px;
 }
 
-.projeto-card {
-    background-color: var(--cor-card);
+.projeto-card{
+    background: var(--cor-card);
 
-    border-radius: 15px;
+    border-radius:20px;
 
-    overflow: hidden;
+    overflow:hidden;
 
-    padding-bottom: 30px;
+    transition:.4s ease;
 
-    transition: 0.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
-.projeto-card:hover {
-    transform: translateY(-10px);
+.projeto-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 15px 35px rgba(0,191,255,.25);
+
 }
 
-.projeto-card img {
-    width: 100%;
-    height: 200px;
+.projeto-card:hover img{
 
-    object-fit: cover;
+    transform:scale(1.05);
+
 }
 
+.projeto-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
 .projeto-card h3 {
     margin: 20px;
     font-size: 25px;
@@ -302,14 +321,22 @@ nav a::after {
     color: var(--cor-texto-secundario);
 }
 
-.projeto-card span {
-    display: block;
+.projeto-card span{
 
-    margin: 20px;
+    display:inline-block;
 
-    color: var(--cor-primaria);
+    margin:20px;
 
-    font-size: 14px;
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:rgba(0,191,255,.12);
+
+    color:var(--cor-primaria);
+
+    font-weight:600;
+
 }
 
 .projeto-botoes {
@@ -319,24 +346,33 @@ nav a::after {
     gap: 15px;
 }
 
-.projeto-botoes a {
-    display: inline-block;
+.projeto-botoes a{
 
-    text-decoration: none;
+    display:flex;
 
-    padding: 10px 20px;
+    justify-content:center;
+    align-items:center;
 
-    border-radius: 8px;
+    width:130px;
+    height:45px;
 
-    background-color: var(--cor-primaria);
+    background:var(--cor-primaria);
 
-    color: var(--cor-texto);
+    color:white;
 
-    transition: 0.3s;
+    border-radius:10px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:600;
+
 }
 
 .projeto-botoes a:hover {
     background-color: var(--cor-secundaria);
+    transform: translateY(-3px);
 }
 
 .logo {
