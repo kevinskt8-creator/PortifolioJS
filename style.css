@@ -25,6 +25,7 @@ html {
 
   --cor-texto: #ffffff;
   --cor-texto-secundario: #d1d5db;
+  
 }
 
 /* ========================================
@@ -261,13 +262,15 @@ nav a:hover::after {
 
   text-align: center;
 
-  transition: all 0.35s ease;
+  transition: 0.35s ease;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 15px 35px rgba(0, 191, 255, 0.25);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px  var(--cor-tecnologia-sombra);
+  
+  
 }
 
 .card:hover i {
@@ -283,24 +286,13 @@ nav a:hover::after {
   color: var(--cor-texto-secundario);
 }
 
-.fa-html5 {
-  color: orange;
-}
-
-.card:hover .fa-html5 {
-  color: orange;
-}
-
-.card:hover .fa-css3 {
-    color: var(#1572B6);
-}
-
 .card i {
   font-size: 55px;
   color: var(--cor-primaria);
   margin-bottom: 20px;
-  transition: all 0.3s ease;
-  color: var(--cor-tecnologia);
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 /* ========================================
