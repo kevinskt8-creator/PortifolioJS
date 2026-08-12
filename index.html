@@ -8,14 +8,18 @@
 
     <link rel="stylesheet" href="style.css" />
 
+ <!--Google Fonts-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@100..700&display=swap"
       rel="stylesheet"
     />
 
+<!--Font Awesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -23,6 +27,8 @@
   </head>
 
   <body>
+
+    <!--Header-->
     <header>
       <a href="#home" class="logo">Carlos Kevin</a>
 
@@ -39,6 +45,7 @@
       <!-- HERO -->
 
       <section class="hero" id="home">
+
         <div class="hero-text">
           <h2>Olá, eu sou</h2>
           <h1 class="hero-title">Carlos Kevin</h1>
@@ -55,11 +62,13 @@
           </p>
 
           <div class="botoes">
+
             <a href="#projetos">Ver Projetos</a>
 
-            <a href="https://wa.me/5561993264861" target="_blank" class="botao">
+            <a href="https://wa.me/5561993264861" target="_blank" rel="noopener noreferrer">
               Contato
             </a>
+
           </div>
         </div>
 
@@ -144,7 +153,8 @@
         <h2>Meus Projetos</h2>
 
         <div class="projetos-container">
-          <div class="projeto-card">
+
+          <article class="projeto-card">
             <img src="imgs/qrcode.png" alt="Gerador de QR Code" />
 
             <h3>Gerador de QR Code</h3>
@@ -172,24 +182,33 @@
             <span> HTML | CSS | JavaScript </span>
 
             <div class="projeto-botoes">
-              <a href="#">GitHub</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github">Github</i>
+              </a>
 
-              <a href="#">Ver Projeto</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square">Ver projeto</i>
+              </a>
+
             </div>
-          </div>
+            
+        </article>
 
-          <div class="projeto-card">
-            <img src="imgs/calculadoraimg.png" alt="Calculadora TMB" />
+          <!--Projeto 03-->
 
-            <h3>Calculadora TMB</h3>
+          <article class="projeto-card">
 
-            <p>
+              <img src="imgs/calculadoraimg.png" alt="Calculadora TMB" />
+
+                <h3>Calculadora TMB</h3>
+
+               <p>
               Calculadora para estimar a Taxa Metabólica Basal e o gasto
               calórico diário.
-            </p>
+             </p>
 
             <span> HTML | CSS | JavaScript | DOM </span>
-
+    
             <div class="projeto-botoes">
               <a
                 href="https://github.com/kevinskt8-creator/calculadora-web"
@@ -205,8 +224,19 @@
                 Ver Projeto
               </a>
             </div>
-          </div>
-        </div>
+            
+
+
+
+          </article>
+
+          
+          
+
+         
+
+         
+       
       </section>
     </main>
 
