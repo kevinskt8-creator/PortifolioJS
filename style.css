@@ -214,13 +214,16 @@ NOME
     0 0 10px rgba(0, 191, 255, 0.15),
     0 0 30px rgba(0, 191, 255, 0.08);
 }
+/*=============================================
+SUBTITULO
+=============================================*/
 
 .hero-text h2 {
   font-size: 24px;
-
   color: var(--cor-primaria);
-
   margin-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .hero-text h3 {
